@@ -1,24 +1,22 @@
-# cryptochange
+# Exchanger
+Показывает информацию о криптовалютах в реальном времени. Считает обмен между криптовалютами и валютами.
 
-## Project setup
+## Установка и запуск
+Открыть терминал
 ```
+git clone https://github.com/m2007/Exchanger.git
+cd ./Exchanger
 npm install
 ```
-
-### Compiles and hot-reloads for development
+Открыть на http://localhost:8080/
 ```
 npm run serve
 ```
-
-### Compiles and minifies for production
+Скомпилировать
 ```
 npm run build
 ```
 
-### Lints and fixes files
-```
-npm run lint
-```
+## Скринкаст
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+![Скрин 1](https://i.ibb.co/mNtGTfX/image.png)
