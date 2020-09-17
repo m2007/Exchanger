@@ -19,7 +19,7 @@
       </crypto-bar>
     </div>
 
-    <exchange :pickedCrypto="pickedCrypto" @changeFromCrypto="clearPick"></exchange>
+    <exchange ref="exchange" :pickedCrypto="pickedCrypto" @changeFromCrypto="clearPick"></exchange>
   </div>
 </template>
 
@@ -64,6 +64,7 @@ export default {
         this.subPrices.push({name: this.allCryptos[i].name, sub: (+this.allCryptos[i].USD.PRICE - +this.prevCryptos[i].USD.PRICE )})
       }
 
+      this.$refs.exchange.count()
       this.prevCryptos = this.allCryptos
     }, 3000)
   }

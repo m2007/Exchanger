@@ -54,9 +54,11 @@ export default {
 
 .red-bcl {
   background-color: red;
+  color: white;
 }
 
 .green-bcl {
   background-color: green;
+  color: white;
 }
 </style>

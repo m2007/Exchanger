@@ -53,11 +53,11 @@ export default {
   watch: {
     fromName() {
       if (this.toName)
-        this.count('from')
+        this.count()
     },
     toName() {
       if (this.fromName)
-        this.count('from')
+        this.count()
     },
     pickedCrypto(newPick) {
       if (newPick) this.fromName = newPick
@@ -67,7 +67,7 @@ export default {
     changeFromCrypto() {
       this.$emit('changeFromCrypto')
     },
-    count(change) {
+    count(change='from') {
       if (!this.toName || !this.fromName) return
       
       if (this.pickedCryptoNums.length == 2) {
